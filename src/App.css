@@ -84,7 +84,7 @@
 
 /* Middle image */
 .middle-image {
-  width: 100px;
+  width: 200px;
   height: auto;
   object-fit: contain;
   margin: 0 1rem;
@@ -127,13 +127,14 @@
 
 .info_2_ref {
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .info_2_ref > span, .info_2_date > span {
   font-weight: 500;
   display: inline-block;
   padding-bottom: 2px;
-  width: 250px;
+  width: 200px;
   text-align: center;
   border-bottom: 2px solid #000;
 }
