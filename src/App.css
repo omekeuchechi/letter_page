@@ -1,0 +1,378 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+/* Main container */
+.letter-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Letter head section */
+.letter-head-section {
+  width: 100%;
+  text-align: center;
+  border-bottom: 6px double #1a4d8f;
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.letter-head-section > b {
+  display: block;
+  font-size: 2.52rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.uppercase-title {
+  text-decoration: none;
+}
+
+.lowercase-title {
+  text-decoration: underline;
+}
+
+#letter-title {
+  margin-top: 50px;
+  text-align: center;
+}
+/* Letter head info container */
+.letter-head-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+/* Left side info */
+.info_1 {
+  flex: 1;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.info_1 > div {
+  margin-bottom: 1rem;
+}
+
+.info_1 b {
+  display: block;
+  color: #1a4d8f;
+  font-weight: 600;
+}
+
+.replying {
+  display: block;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 1rem;
+  border: 3px solid red;
+  padding: 20px;
+}
+
+/* Middle image */
+.middle-image {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 1rem;
+}
+
+/* Right side info */
+.info_2 {
+  flex: 1;
+  text-align: right;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.info_2_text {
+  display: block;
+  color: #1a4d8f;
+  font-weight: 600;
+  font-size: 0.77rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.info_2_address {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+}
+.ref-date{
+  display: flex;
+  margin-left: 50px;
+  align-items: start;
+  flex-direction: column;
+}
+
+.info_2_ref, .info_2_date {
+  color: #666;
+  font-size: 0.85rem;
+  font-weight: 900;
+}
+
+.info_2_ref {
+  margin-bottom: 20px;
+}
+
+.info_2_ref > span, .info_2_date > span {
+  font-weight: 500;
+  display: inline-block;
+  padding-bottom: 2px;
+  width: 250px;
+  text-align: center;
+  border-bottom: 2px solid #000;
+}
+/* reciever-address section */
+.reciever-address{
+  width: 250px;
+  text-align: left;
+}
+
+.reciever-address > p{
+  margin-bottom: 0.5rem;
+}
+
+.reciever-address > span{
+  margin-bottom: 0.5rem;
+}
+
+.reciever-address > span > b{
+  font-weight: 600;
+}
+
+/* letter body section */
+.letter-body{
+  width: 100%;
+}
+
+.letter-body-inner{
+  width: 100%;
+}
+
+.letter-body-inner > p{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.letter-body-inner > ol > li{
+  color: #000;
+  margin: 0 100px;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+/* Footer Section */
+.letter-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 60px;
+  padding: 30px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Signature Section */
+.signature-section {
+  flex: 1;
+  max-width: 300px;
+}
+
+.signature-line {
+  width: 200px;
+  height: 1px;
+  background-color: #333;
+  margin-bottom: 10px;
+}
+
+.signature-data {
+  line-height: 1.6;
+}
+
+.signature-data b {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.signature-data p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.signature-data span {
+  font-size: 0.9rem;
+  color: #555;
+  font-style: italic;
+}
+
+/* QR Code Section */
+.qr-code-section {
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.qr-code-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ========== Responsive Styles ========== */
+
+/* Large Desktops (1200px and up) */
+@media (min-width: 1200px) {
+  .letter-container {
+    max-width: 1000px;
+    padding: 2.5rem 3rem;
+  }
+}
+
+/* Tablets (768px - 1199px) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .letter-container {
+    padding: 1.5rem 2rem;
+  }
+  
+  .letter-head-section > b {
+    font-size: 2rem;
+  }
+  
+  .middle-image {
+    width: 80px;
+  }
+  
+  .letter-body-inner > p,
+  .letter-body-inner > ol > li {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+  .letter-container {
+    padding: 1rem;
+  }
+  
+  .letter-head-section > b {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .letter-head-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .info_1, 
+  .info_2 {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .middle-image {
+    margin: 1rem 0;
+    width: 70px;
+  }
+  
+  .ref-date {
+    margin-left: 0;
+    align-items: center;
+  }
+  
+  .reciever-address {
+    width: 100%;
+    margin: 1.5rem 0;
+  }
+  
+  .letter-body-inner > p,
+  .letter-body-inner > ol > li {
+    font-size: 1rem;
+    margin: 0.8rem 0;
+  }
+  
+  .letter-body-inner > ol > li {
+    margin-left: 1.5rem;
+  }
+  
+  .letter-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .signature-section {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .signature-line {
+    margin: 0 auto 1rem;
+  }
+  
+  .qr-code-section {
+    margin-top: 1rem;
+  }
+}
+
+/* ========== Print Styles (A4 Portrait) ========== */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 15mm 15mm 15mm 15mm;
+  }
+  
+  body {
+    background: white !important;
+    font-size: 12pt;
+    line-height: 1.5;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 297mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  
+  .letter-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 15mm !important;
+    box-shadow: none !important;
+    transform: none !important;
+    break-inside: avoid;
+  }
+  
+  .letter-head-section,
+  .letter-body,
+  .letter-footer {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
